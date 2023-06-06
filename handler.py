@@ -32,13 +32,13 @@ def rossmann_predict():
         df1 = pipeline.data_cleaning(test_raw)
         
         #feature engineering
-        df2 = pipeline.feature_engineering(df1)
+        df1 = pipeline.feature_engineering(df1)
         
         #data preparation
-        df3 = pipeline.data_preparation(df2)
+        df1 = pipeline.data_preparation(df1)
     
         #predintion
-        df_response = pipeline.get_predction(model, test_raw, df3)
+        df_response = pipeline.get_prediction(model, test_raw, df1)
 
 
         return df_response

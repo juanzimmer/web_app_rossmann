@@ -207,7 +207,7 @@ class Rossmann(object):
 
         return df4[cols_selected]
     
-    def get_predction(self, model, original_data, test_data):
+    def get_prediction(self, model, original_data, test_data):
         #prediction
         pred = model.predict(test_data)
 
